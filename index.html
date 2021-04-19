@@ -1,3 +1,463 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>shvamz</title>
+  
+  <!--#######$$$$## Favicon ####@@@##@@@ -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+  <!--*************** Font Awesome ************ -->
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  />
+
+  <!-- ***********AOS animation on scroll*********** -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+  <!-- *********Glidejs********** -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"
+    />
+    <!-- ***-*-*  Our StyleSheet********** -->
+    <link rel="stylesheet" href="style.css" />
+
+	<title>shvamz</title>
+</head>
+<body>
+<!-- HEADER -->
+	<header id="home" class="header">
+		<nav class="nav">
+			<div class="navigation container">
+				<div class="logo">
+					<img src="logo/logoshvamz.png">
+				</div>
+
+				<div class="menu">
+					<div class="top-nav">
+						<div class="logo">
+							<h1>Developer<span>.</span></h1>
+						</div>
+						<div class="close">
+							<i class="fas fa-times"></i>
+						</div>
+					</div>
+
+					<ul class="nav-list">
+						<li class="nav-item">
+							<a href="#home" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+                		<a href="#about" class="nav-link scroll-link">About</a>
+              			</li>
+              			<li class="nav-item">
+                		<a href="#services" class="nav-link scroll-link">Services</a>
+              			</li>
+              			<li class="nav-item">
+                		<a href="#skills" class="nav-link scroll-link">Skills</a>
+              			</li>
+              			<li class="nav-item">
+                		<a href="#project" class="nav-link scroll-link">Projects</a>
+              			</li>              			
+              			<li class="nav-item">
+                		<a href="#contact" class="nav-link scroll-link">Contact</a>
+              			</li>
+					</ul>
+				</div>
+
+				<div class="hamburger">
+            		<i class="fas fa-bars"></i>
+          		</div>
+			</div>
+		</nav>
+		<!-- ###### HERO ######## -->
+		<div class="hero">
+        <h3>Hi, my name is</h3>
+        <h1>Shivam Tiwari</h1>
+        <h4>And I'm a <span id="type1"></span></h4>
+        <button class="hire-button" href="#">Hire me</button>
+        </div>
+      
+      <div class="swapimage">
+        <img class="banner" src="./images/bg.png" alt="" />
+        <img class="hover-banner" src="./images/bgcopy.png" alt="" />
+        </div>
+
+      <div class="icons">
+        <span><i class="fab fa-dribbble"></i></span>
+        <span><i class="fab fa-instagram"></i></span>
+        <span><i class="fab fa-github"></i></span>
+        <span><i class="fab fa-linkedin"></i></span>
+      </div>
+	</header>
+
+	<!-- ########## MAIN ########### -->
+	<!-- Main -->
+    <section class="section about" id="about">
+      <div class="title">
+        <h1>About me</h1>
+      </div>
+
+      <div class="about-center container">
+        <div class="left" data-aos="fade-right" data-aos-duration="2000">
+          <img src="./images/profile1.jpg" alt="" /> 
+        </div>
+        <div class="right" data-aos="fade-left" data-aos-duration="2000">
+          <h1>I'm Shivam a <span id="type2"></span></h1>
+          <p>
+            The biggest power someone can have is the power of creation. As a web designer and developer I feel I've got that power. Working on some real-world project always excites me. As latest frameworks and tools are being introduced every year, a flexible and adaptable developer is what we need. Yep, that's me!
+          </p>
+          <a href="#" class="btn">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section theme" id="services">
+      <div class="title">
+        <h1>My Services</h1>
+      </div>
+
+      <div class="services-center container">
+        <div class="service" data-aos="fade-down" data-aos-duration="2000">
+          <span><i class="fa fa-paint-brush"></i></span>
+          <h2>UI/UX Design</h2>
+          <p>
+             With plenty of applications all over the world, consumers go for the products that are pleasing to eyes and easy to use. I have two years of experience of UI and UX designing. I mostly work with Figma and photoshop.
+          </p>
+        </div>
+
+        <div class="service" data-aos="fade-up" data-aos-duration="2000">
+          <span><i class="fab fa-react"></i></span>
+          <h2>Web Development</h2>
+          <p>
+            I am mainly Front-end developer with basic knowledge of Back-end. From basic HTML to React JS. I am comfortable with almost every tool that is used in development. 
+          </p>
+        </div>
+
+        <div class="service" data-aos="fade-down" data-aos-duration="2000">
+          <span><i class="fas fa-database"></i></span>
+          <h2>Database management</h2>
+          <p>
+            A database is a collection of information that is organized so that it can be easily accessed, managed and updated. I have experience with SQL and MongoDB.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--###########SKILLS######### -->
+    <section class="section theme2" id="skills" data-aos="fade-up" data-aos-duration="2000">
+      <div class="title">
+        <h1>My Skills</h1>
+      </div>
+      <div class="square1 square">
+      	<img src="atom.svg" height="70px" width="70px">
+      	    <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="chart">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="80, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+  <text x="18" y="20.35" class="percentage">80%</text>
+    </svg>
+      </div>
+  </div>
+
+    <div class="square2 square">
+      	<img src="logo/html5.svg" height="70px" width="70px">
+      	<div class="single-chart">
+    <svg viewBox="0 0 36 36" class="chart">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="95, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+  <text x="18" y="20.35" class="percentage">95%</text>
+    </svg>
+      </div></div>
+
+            <div class="square3 square">
+      	<img src="logo/css.svg" height="70px" width="70px">
+      	    <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="chart">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="92, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+  <text x="18" y="20.35" class="percentage">92%</text>
+    </svg>
+      </div></div>
+
+            <div class="square4 square">
+      	<img src="logo/c.svg" height="70px" width="70px">
+      	    <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="chart">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="90, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+  <text x="18" y="20.35" class="percentage">90%</text>
+    </svg>
+      </div></div>
+
+      <div class="square5 square">
+      	<img src="logo/js.svg" height="70px" width="70px">
+      	    <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="chart">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="85, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+  <text x="18" y="20.35" class="percentage">85%</text>
+    </svg>
+      </div></div>
+
+      <div class="square6 square">
+      	<img src="logo/node.svg" height="70px" width="70px">
+      	    <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="chart">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="80, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+  <text x="18" y="20.35" class="percentage">80%</text>
+    </svg>
+      </div></div>
+
+      <div class="square7 square">
+      	<img src="logo/linux.svg" height="70px" width="70px">
+      	    <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="chart">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="85, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+  <text x="18" y="20.35" class="percentage">85%</text>
+    </svg>
+      </div></div>
+
+      <div class="square8 square">
+      	<img src="logo/python.svg" height="70px" width="70px">
+      	    <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="chart">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="90, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+  <text x="18" y="20.35" class="percentage">90%</text>
+    </svg>
+      </div></div>
+      
+      <div class="square9 square">
+      	<img src="logo/sql.svg" height="70px" width="70px">
+      	    <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="chart">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="85, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+  <text x="18" y="20.35" class="percentage">85%</text>
+    </svg>
+      </div></div>
+
+            <div class="square10 square">
+      	<img src="logo/photoshop.svg" height="70px" width="70px">
+      	    <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="chart">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="95, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+  <text x="18" y="20.35" class="percentage">95%</text>
+    </svg>
+      </div></div>
+
+
+    </section>
+
+    <!--Projects-->
+
+    <section class="section theme3" id="project">
+      <div class="title">
+        <h1>My Projects</h1>
+      </div>
+
+      <div class="services-center container">
+        <div class="project" data-aos="fade-down" data-aos-duration="2000">
+          <h2>Mood Player</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            exercitationem numquam porro asperiores neque architecto.
+          </p>
+          <a href="#" class="btn">Project Demo</a>
+        </div>
+
+        <div class="project" data-aos="fade-up" data-aos-duration="2000">
+          <h2>Attention span detector</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            exercitationem numquam porro asperiores neque architecto.
+          </p>
+          <a href="#" class="btn">Project Demo</a>
+        </div>
+
+        <div class="project" data-aos="fade-down" data-aos-duration="2000">
+          <h2>UI Design of a Website</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            exercitationem numquam porro asperiores neque architecto.
+          </p>
+          <a href="#" class="btn">Project Demo</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="title">
+        <h1>Contact me</h1>
+      </div>
+
+      <div class="contact-center container">
+        <div class="left" data-aos="fade-down-right" data-aos-duration="2000">
+          <h2>Get in Touch</h2>
+          <p>
+            Let's get in touch. Provide me with your project description, budget and deadline. I'll get back to you as soon as possible. You can just send me your feedbacks about my portfolio
+          </p>
+          <div>
+            <span class="icon"><i class="fas fa-user"></i></span>
+            <span class="content">
+              <h3>Name</h3>
+              <span>Shivam Tiwari</span>
+            </span>
+          </div>
+
+          <div>
+            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+            <span class="content">
+              <h3>Address</h3>
+              <span>India</span>
+            </span>
+          </div>
+
+          <div>
+            <span class="icon"><i class="fas fa-envelope"></i></span>
+            <span class="content">
+              <h3>Email</h3>
+              <span>shivam.me202@gmail.com</span>
+            </span>
+          </div>
+        </div>
+        <div class="right" data-aos="fade-up-left" data-aos-duration="2000">
+          <form class="form">
+            <h2>Message me</h2>
+            <div>
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+            </div>
+            <input type="text" placeholder="Subject" />
+            <textarea
+              cols="10"
+              rows="10"
+              placeholder="Describe Project"
+            ></textarea>
+
+            <a href="#" class="btn">Send message</a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Created By <span>shvamz</span> | &copy; 2021 All rights reserved.</p>
+    </footer>
+
+
+
+	 <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Typeit -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!-- Glidejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <!-- Custom Script -->
+    <script src="index.js"></script>
+</body>
+</html>
